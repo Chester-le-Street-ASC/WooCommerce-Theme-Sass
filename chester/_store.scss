@@ -1,0 +1,227 @@
+.shop_table {
+  border-radius: 0;
+}
+
+.price, {
+    color: #343a40;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.woocommerce-info::before {
+    color: #bd0000;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    background-color: #efefef;
+    color: #343a40;
+    border-top: 3px solid #bd0000;
+    list-style: none outside;
+    width: auto;
+    word-wrap: auto;
+}
+
+.price {
+  padding: 0 0 1rem 0;
+}
+
+p.price {
+  padding: 0;
+}
+
+.products {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.products .product .wp-post-image {
+    width: 100%;
+}
+
+@include media-breakpoint-down(md) {
+  .productArchiveListItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $grid-gutter-width;
+    grid-template-areas: "thumbnail details";
+  }
+  .productArchiveThumbnail {
+    grid-area: thumbnail;
+  }
+  .productItemDetails {
+    grid-area: details
+  }
+  .add-to-cart-container {
+    margin: 1rem 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: $grid-gutter-width;
+      grid-row-gap: 2rem;
+  }
+
+/*  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $grid-gutter-width;
+  }*/
+
+  .products .product {
+      display: grid;
+      align-content: space-between;
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
+  }
+  .add-to-cart-container {
+    margin: 1rem 0 0 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: $grid-gutter-width;
+      grid-row-gap: 2rem;
+  }
+
+  /*.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $grid-gutter-width;
+  }*/
+
+  .products .product {
+      display: grid;
+      align-content: space-between;
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
+  }
+}
+
+.woocommerce-LoopProduct-link {
+  padding: 0 0 1rem 0;
+}
+
+.woocommerce-loop-product__title {
+  padding: 1rem 0 0 0;
+}
+
+.wc_payment_methods {
+  list-style: none;
+  padding: 0;
+}
+
+.wc_payment_methods .input-radio {
+  display: none;
+}
+
+.wc-saved-payment-methods {
+  list-style: none;
+  padding: 0;
+}
+
+#stripe-card-cvc {
+  width: 100% !important;
+}
+
+.input-text {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.input-text:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ff3e3e;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(189, 0, 0, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(189, 0, 0, 0.25);
+}
+
+.form-row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#billing_country_field .control-label {
+  width: 100%;
+}
+
+// Product Page grid
+
+.productPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: $grid-gutter-width;
+  grid-template-rows: auto;
+  grid-template-areas:  "summary"
+                        "image-gallery";
+}
+
+@include media-breakpoint-up(lg) {
+  .productPage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  "image-gallery summary"
+                          "image-gallery summary";
+  }
+}
+.productPageImages {
+    grid-area: image-gallery;
+}
+
+.productPageText {
+  grid-area: summary;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+.apple-pay-button-wrapper {
+  width: 100%;
+}
+
+.apple-pay-button {
+  max-width: unset !important;
+  border-radius: 0 !important;
+}
+
+.single-product form.cart .apple-pay-button {
+  margin: 1rem 0 !important;
+  float: unset !important;
+}
+
+.logo {
+  background-image: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterStoreLogo.svg);
+}
+
+@supports (display: grid) {
+  #noSupportAlert{
+    display:none;
+  }
+}
