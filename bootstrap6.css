@@ -6628,11 +6628,19 @@ header {
   margin: 1rem 0 !important;
   float: unset !important; }
 
-.logo {
-  background-image: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterStoreLogo.svg); }
+.storeLogo {
+  background-image: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterStoreLogo.svg);
+  background-size: auto auto;
+  background-size: contain;
+  max-width: 445px;
+  height: 71px;
+  display: block;
+  background-repeat: no-repeat; }
 
 @supports (display: grid) {
   #noSupportAlert {
     display: none; } }
+#cookie-law {
+  margin: 0 !important; }
 
-/*# sourceMappingURL=bootstrap4.css.map */
+/*# sourceMappingURL=bootstrap6.css.map */
