@@ -170,6 +170,22 @@ p.price {
   width: 100%;
 }
 
+#billing_country_field strong {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #e9ecef;
+  opacity: 1;
+  font-weight: normal;
+}
+
 // Product Page grid
 
 .productPage {
@@ -217,13 +233,12 @@ header {
 }
 
 .storeLogo {
-  background-image: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterStoreLogo.svg);
+  max-width: 445px;
+  height: 64px;
+  display: block;
+  background: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterStoreLogo.svg) left center no-repeat;
     background-size: auto auto;
   background-size: contain;
-  max-width: 445px;
-  height: 71px;
-  display: block;
-  background-repeat: no-repeat;
 }
 
 @supports (display: grid) {
@@ -234,4 +249,8 @@ header {
 
 #cookie-law {
   margin: 0 !important;
+}
+
+.nav-tabs {
+  margin-bottom: 1rem;
 }
