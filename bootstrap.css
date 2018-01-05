@@ -6477,6 +6477,9 @@ a.text-dark:hover {
   width: auto;
   word-wrap: auto; }
 
+.price {
+  padding: 0 0 1rem 0; }
+
 p.price {
   padding: 0; }
 
@@ -6546,8 +6549,8 @@ p.price {
     grid-template-rows: 1fr;
     grid-template-columns: auto; }
 
-  .productItemDetails {
-    padding: 1rem 0 0 0; } }
+  .woocommerce-LoopProduct-link {
+    padding: 0 0 1rem 0; } }
 .wc_payment_methods {
   list-style: none;
   padding: 0; }
@@ -6660,4 +6663,4 @@ header {
 .nav-tabs {
   margin-bottom: 1rem; }
 
-/*# sourceMappingURL=bootstrap6.css.map */
+/*# sourceMappingURL=bootstrap.css.map */

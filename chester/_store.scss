@@ -25,10 +25,6 @@
     word-wrap: auto;
 }
 
-.price {
-  padding: 0 0 1rem 0;
-}
-
 p.price {
   padding: 0;
 }
@@ -48,6 +44,7 @@ p.price {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: $grid-gutter-width;
+    column-gap: $grid-gutter-width;
     grid-template-areas: "thumbnail details";
   }
   .productArchiveThumbnail {
@@ -66,7 +63,9 @@ p.price {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: $grid-gutter-width;
+      column-gap: $grid-gutter-width;
       grid-row-gap: 2rem;
+      row-gap: 2rem;
   }
 
 /*  .product {
@@ -91,7 +90,9 @@ p.price {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: $grid-gutter-width;
+      column-gap: $grid-gutter-width;
       grid-row-gap: 2rem;
+      row-gap: 2rem;
   }
 
   /*.product {
@@ -106,14 +107,10 @@ p.price {
       grid-template-rows: 1fr;
       grid-template-columns: auto;
   }
-}
 
-.woocommerce-LoopProduct-link {
-  padding: 0 0 1rem 0;
-}
-
-.woocommerce-loop-product__title {
-  padding: 1rem 0 0 0;
+  .productItemDetails {
+    padding: 1rem 0 0 0;
+  }
 }
 
 .wc_payment_methods {
@@ -192,6 +189,7 @@ p.price {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: $grid-gutter-width;
+  column-gap: $grid-gutter-width;
   grid-template-rows: auto;
   grid-template-areas:  "summary"
                         "image-gallery";
