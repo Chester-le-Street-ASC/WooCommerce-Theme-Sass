@@ -2,7 +2,7 @@
 
 Chester-le-Street ASC CSS
 Version 2.0
-© Christopher Heppell & Chester-le-Street ASC 2017
+© Christopher Heppell & Chester-le-Street ASC 2018
 
 Do not distribute
 
@@ -283,18 +283,18 @@ h3#reply-title {
     max-width: 445px;
     height: 71px;
     display: block;
-    background: url(./img/chesterLogo.svg) left center no-repeat;
+    background: url(/wp-content/themes/chester/img/chesterLogo.svg) left center no-repeat;
     background-size: contain;
 }
 .logowhite {
     max-width: 445px;
 	height: 71px;
 	display: block;
-    background: url(./img/chesterLogoAMP.svg) left center no-repeat;
+    background: url(/wp-content/themes/chester/img/chesterLogoAMP.svg) left center no-repeat;
     background-size: contain;
 }
 .topimage-halloffame {
-    background-image: url(./img/stylish/imagetophalloffame.jpg);
+    background-image: url(/wp-content/themes/chester/img/stylish/imagetophalloffame.jpg);
     background-size: cover;
     height: calc(100vh - 3.25rem);
     width: 100%;
