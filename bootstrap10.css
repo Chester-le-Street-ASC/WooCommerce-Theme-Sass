@@ -39,7 +39,7 @@
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1260px;
+  --breakpoint-xl: 1320px;
   --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-family-monospace: "Roboto Monospace", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
@@ -485,9 +485,9 @@ pre {
   @media (min-width: 992px) {
     .container {
       max-width: 960px; } }
-  @media (min-width: 1260px) {
+  @media (min-width: 1320px) {
     .container {
-      max-width: 1220px; } }
+      max-width: 1280px; } }
 
 .container-fluid {
   width: 100%;
@@ -1051,7 +1051,7 @@ pre {
 
   .offset-lg-11 {
     margin-left: 91.6666666667%; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -1370,7 +1370,7 @@ pre {
     -ms-overflow-style: -ms-autohiding-scrollbar; }
     .table-responsive-lg > .table-bordered {
       border: 0; } }
-@media (max-width: 1259.99px) {
+@media (max-width: 1319.99px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -2792,12 +2792,12 @@ tbody.collapse.show {
     .navbar-expand-lg .dropup .dropdown-menu {
       top: auto;
       bottom: 100%; } }
-@media (max-width: 1259.99px) {
+@media (max-width: 1319.99px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start; }
@@ -4358,7 +4358,7 @@ button.bg-dark:hover {
 
   .d-lg-inline-flex {
     display: inline-flex !important; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .d-xl-none {
     display: none !important; }
 
@@ -4789,7 +4789,7 @@ button.bg-dark:hover {
 
   .align-self-lg-stretch {
     align-self: stretch !important; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .flex-xl-row {
     flex-direction: row !important; }
 
@@ -4912,7 +4912,7 @@ button.bg-dark:hover {
 
   .float-lg-none {
     float: none !important; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .float-xl-left {
     float: left !important; }
 
@@ -5994,7 +5994,7 @@ button.bg-dark:hover {
   .ml-lg-auto,
   .mx-lg-auto {
     margin-left: auto !important; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .m-xl-0 {
     margin: 0 !important; }
 
@@ -6288,7 +6288,7 @@ button.bg-dark:hover {
 
   .text-lg-center {
     text-align: center !important; } }
-@media (min-width: 1260px) {
+@media (min-width: 1320px) {
   .text-xl-left {
     text-align: left !important; }
 
@@ -6455,5 +6455,737 @@ a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+/* Globals */
+.post img, .wp-caption img, img {
+  height: auto;
+  max-width: 100%; }
 
-/*# sourceMappingURL=chesterBS.css.map */
+.type-post img {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important; }
+
+.post img, .widget img, .widget select, .wp-caption, img {
+  max-width: 100%; }
+
+.blog-main img {
+  max-width: 100%; }
+
+.wp-caption {
+  margin-bottom: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important; }
+
+html {
+  background: #333; }
+
+body {
+  background: #FFF; }
+
+.row-flex::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.row-flex, .row-flex > div[class*=col-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+.row-flex-wrap {
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0; }
+
+.container-flex > div[class*=col-], .row-flex > div[class*=col-] {
+  margin: -.2px; }
+
+.container-flex > div[class*=col-] div, .row-flex > div[class*=col-] div {
+  width: 100%; }
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  -ms-flex-flow: column nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap; }
+
+.flex-grow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
+
+.marginTop {
+  margin-top: 1rem; }
+
+.marginBottom {
+  margin-bottom: 1rem; }
+
+.m-b-0 {
+  margin-bottom: 0; }
+
+.m-t-0 {
+  margin-top: 0; }
+
+.post img {
+  border: none !important; }
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin: .3em .9em .5em 0; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin: .3em 0 .5em .9em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto .625em; }
+
+.wp-caption img {
+  display: block; }
+
+.post-thumb, label.screen-reader-text {
+  display: none; }
+
+.wp-caption-text {
+  text-align: left;
+  width: 100%;
+  background: #efefef;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 1rem 0; }
+
+.size-full {
+  margin-bottom: 0; }
+
+.widget_text ol:last-child, .widget_text p:last-child, .widget_text ul:last-child {
+  margin-bottom: 15px; }
+
+.widget ul {
+  padding: 0;
+  margin: 0 0 0 1.2em; }
+
+.widget ul li {
+  padding: .2em 0; }
+
+#wp-calendar caption {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.blog-post-title, .sidebar-module-title {
+  margin-top: 0; }
+
+li.comment {
+  list-style: none;
+  margin: 2em 0;
+  padding: 1em;
+  border: 1px solid #e8e8e8; }
+
+img.avatar {
+  float: right;
+  border: 1px solid #ddd;
+  border-radius: 50%; }
+
+cite.fn {
+  font-size: 24px; }
+
+span.says {
+  display: none; }
+
+.comment-meta {
+  font-size: small;
+  margin: 0 0 1em;
+  display: block; }
+
+h3#reply-title {
+  margin-top: 1em; }
+
+.comment-form textarea, input#author, input#email, input#url {
+  display: block;
+  border: 1px solid #ddd;
+  margin: .1em 0 1.1em; }
+
+.is-flex, .vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox; }
+
+.comment-form textarea {
+  max-width: 100%; }
+
+.comment-form label {
+  font-size: 13px; }
+
+.blog-description {
+  font-size: 1.5 rem;
+  font-weight: bold; }
+
+.search10 {
+  margin-top: 10px; }
+
+.sponsor {
+  padding: 0 0 1.4rem 0; }
+
+.img-center {
+  margin: 0 auto; }
+
+.slogan {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0; }
+
+.masthead, .topimage-halloffame {
+  margin: -1.1rem 0 1rem 0;
+  position: relative; }
+
+.masthead {
+  padding: 3rem 0;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a40000), to(#bd0000));
+  background-image: -webkit-linear-gradient(top, #a40000 0, #bd0000 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a40000), to(#bd0000));
+  background-image: -o-linear-gradient(top, #a40000 0, #bd0000 100%);
+  background-image: linear-gradient(to bottom, #a40000 0, #bd0000 100%);
+  background-repeat: repeat-x;
+  margin-bottom: 1.5rem;
+  color: #ffffff; }
+
+.list-group-flagship-content.list-group-item, ::-moz-selection {
+  text-shadow: none; }
+
+.list-group-flagship-content.list-group-item, ::selection {
+  text-shadow: none; }
+
+.masthead-header {
+  padding: 1.5rem 0; }
+
+.is-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.is-flex > [class*=col-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.logo {
+  max-width: 445px;
+  height: 71px;
+  display: block;
+  background: url(/wp-content/themes/chester/img/chesterLogo.svg) left center no-repeat;
+  background-size: contain; }
+
+.logowhite {
+  max-width: 445px;
+  height: 71px;
+  display: block;
+  background: url(/wp-content/themes/chester/img/chesterLogoAMP.svg) left center no-repeat;
+  background-size: contain; }
+
+.topimage-halloffame {
+  background-image: url(/wp-content/themes/chester/img/stylish/imagetophalloffame.jpg);
+  background-size: cover;
+  height: calc(100vh - 3.25rem);
+  width: 100%;
+  min-height: auto;
+  color: #fff;
+  background-position: center; }
+
+#topimage-text {
+  width: calc(100% - 60px);
+  max-height: calc(100% - 60px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.topimage-text-large {
+  font-size: 100px !important; }
+
+.tweet-embed {
+  margin: 0 -10px;
+  width: auto !important; }
+
+@media print {
+  .sharedaddy {
+    display: none !important; } }
+.fa-navbar-caret {
+  font-size: 12px; }
+
+a {
+  -webkit-tap-highlight-color: rgba(189, 0, 0, 0.3); }
+
+.list-group-item, .navbar a {
+  -webkit-tap-highlight-color: transparent; }
+
+.blog-main a[href*="//"]:not([href*="chesterlestreetasc.co.uk"]):after {
+  font-family: "FontAwesome";
+  content: "\00a0\f08e"; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc; }
+
+.cell, .flex-panel-default, .well {
+  background-color: #efefef;
+  padding: 1rem; }
+
+.cell, .well {
+  min-height: 20px;
+  border: none;
+  border-top: 3px solid #bd0000;
+  border-radius: 0;
+  margin: 0 0 1rem 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 1rem; }
+
+/* Bootstrap 4 and Navwalker Dropdown Fixes */
+.navbar-nav .active > .dropdown-item {
+  font-weight: bold; }
+
+.navbar.active.nav-link {
+  font-weight: bold; }
+
+@media (max-width: 991.99px) {
+  .collapse.show {
+    overflow-y: auto;
+    max-height: 400px; } }
+/* CLS Global Footer CSS */
+.cls-global-footer-body {
+  padding: 1rem 0; }
+
+.cls-global-footer-inverse {
+  background: #333;
+  color: #FFF; }
+
+.cls-global-footer-inverse a {
+  color: #FFF; }
+
+.cls-global-footer-inverse a:hover {
+  color: #FFF; }
+
+.cls-global-footer-sponsors {
+  background: #777;
+  color: #FFF;
+  padding: 1.4rem 00 0;
+  margin: 1rem 0 0; }
+
+/* Cookie Notice CSS */
+#cookie-law {
+  background: #333;
+  color: #FFF;
+  margin: -1.1rem 0 1.1rem 0;
+  padding: 0.8rem 0 0.8rem 0; }
+
+#cookie-law .alert-link {
+  text-decoration: underline;
+  color: #ffffff; }
+
+#cookie-law .alert-link:hover {
+  color: #ffffff; }
+
+/* Post Footer for Pagination */
+.pagination {
+  margin: 2rem 0 1rem 0; }
+
+.cls-post-footer {
+  background-color: #efefef;
+  padding: 0.8rem 0.8rem 0rem 0.8rem;
+  margin: 1rem 0 0 0; }
+
+.cls-pager > a {
+  background-color: #efefef;
+  padding: 1rem 0.8rem;
+  display: block;
+  min-height: 2rem;
+  font-size: 1.2rem; }
+
+.cls-pager > a:hover {
+  background-color: #e5e5e5;
+  text-decoration: none; }
+
+.cls-pager > a:focus {
+  background-color: #e5e5e5;
+  text-decoration: none; }
+
+.cls-pager-parent {
+  list-style: none;
+  padding: 0; }
+
+.cls-pager-left {
+  margin: 0 -0.8rem 0 -0.8rem; }
+
+.cls-pager-right {
+  text-align: right;
+  margin: 0 -0.8rem 0 -0.8rem; }
+
+/* Social Media Sharing Buttons */
+.sharing div {
+  text-align: center;
+  padding-right: 5px !important; }
+
+.sharing {
+  padding-left: 0;
+  margin-right: -5px; }
+
+.sharingterms {
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.sharing .col .btn {
+  font-size: 1.2rem !important;
+  padding: 0.375rem; }
+
+.btn-mail {
+  background: #333;
+  color: #FFF; }
+
+.btn-mail:hover {
+  color: #FFF; }
+
+.btn-mail:active {
+  color: #FFF; }
+
+.btn-mail:focus {
+  color: #FFF; }
+
+.btn-fb {
+  background: #3b5998;
+  color: #FFF; }
+
+.btn-fb:hover {
+  color: #FFF; }
+
+.btn-fb:active {
+  color: #FFF; }
+
+.btn-fb:focus {
+  color: #FFF; }
+
+.btn-tweet {
+  background: #1da1f2;
+  color: #FFF; }
+
+.btn-tweet:hover {
+  color: #FFF; }
+
+.btn-tweet:active {
+  color: #FFF; }
+
+.btn-tweet:focus {
+  color: #FFF; }
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #FFF; }
+
+.btn-whatsapp:hover {
+  color: #FFF; }
+
+.btn-whatsapp:active {
+  color: #FFF; }
+
+.btn-whatsapp:focus {
+  color: #FFF; }
+
+.btn-pinterest {
+  background: #bd081c;
+  color: #FFF; }
+
+.btn-pinterest:hover {
+  color: #FFF; }
+
+.btn-pinterest:active {
+  color: #FFF; }
+
+.btn-pinterest:focus {
+  color: #FFF; }
+
+.btn-linkedin {
+  background: #0077b5;
+  color: #FFF; }
+
+.btn-linkedin:hover {
+  color: #FFF; }
+
+.btn-linkedin:active {
+  color: #FFF; }
+
+.btn-linkedin:focus {
+  color: #FFF; }
+
+/* Post Tags */
+.p-tags > a {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc; }
+
+.p-tags > a:hover {
+  color: #FFF;
+  background-color: #005fbd;
+  border-color: #adadad;
+  text-decoration: none; }
+
+.p-tags > a:active {
+  color: #FFF;
+  background-color: #0055aa;
+  border-color: #adadad;
+  text-decoration: none; }
+
+.shop_table {
+  border-radius: 0; }
+
+.price {
+  color: #343a40; }
+
+.form-control {
+  width: 100%; }
+
+.woocommerce-info::before {
+  color: #bd0000; }
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  background-color: #efefef;
+  color: #343a40;
+  border-top: 3px solid #bd0000;
+  list-style: none outside;
+  width: auto;
+  word-wrap: auto; }
+
+p.price {
+  padding: 0; }
+
+.products {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0; }
+
+.products .product .wp-post-image {
+  width: 100%; }
+
+@media (max-width: 991.99px) {
+  .productArchiveListItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: "thumbnail details"; }
+
+  .productArchiveThumbnail {
+    grid-area: thumbnail; }
+
+  .productItemDetails {
+    grid-area: details; }
+
+  .add-to-cart-container {
+    margin: 1rem 0; } }
+@media (min-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    column-gap: 20px;
+    grid-row-gap: 2rem;
+    row-gap: 2rem; }
+
+  /*  .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: $grid-gutter-width;
+    }*/
+  .products .product {
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto; }
+
+  .add-to-cart-container {
+    margin: 1rem 0 0 0; } }
+@media (min-width: 992px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    column-gap: 20px;
+    grid-row-gap: 2rem;
+    row-gap: 2rem; }
+
+  /*.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $grid-gutter-width;
+  }*/
+  .products .product {
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto; }
+
+  .productItemDetails {
+    padding: 1rem 0 0 0; } }
+.wc_payment_methods {
+  list-style: none;
+  padding: 0; }
+
+.wc_payment_methods .input-radio {
+  display: none; }
+
+.wc-saved-payment-methods {
+  list-style: none;
+  padding: 0; }
+
+#stripe-card-cvc {
+  width: 100% !important; }
+
+.input-text {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+
+.input-text:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ff3e3e;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(189, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(189, 0, 0, 0.25); }
+
+.form-row {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+#billing_country_field .control-label {
+  width: 100%; }
+
+#billing_country_field strong {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #e9ecef;
+  opacity: 1;
+  font-weight: normal; }
+
+.productPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  column-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-areas: "summary" "image-gallery"; }
+
+@media (min-width: 992px) {
+  .productPage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image-gallery summary" "image-gallery summary"; } }
+.productPageImages {
+  grid-area: image-gallery; }
+
+.productPageText {
+  grid-area: summary; }
+
+header {
+  margin-top: 1rem; }
+
+.apple-pay-button-wrapper {
+  width: 100%; }
+
+.apple-pay-button {
+  max-width: unset !important;
+  border-radius: 0 !important; }
+
+.single-product form.cart .apple-pay-button {
+  margin: 1rem 0 !important;
+  float: unset !important; }
+
+.storeLogo {
+  max-width: 445px;
+  height: 64px;
+  display: block;
+  background: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterStoreLogo.svg) left center no-repeat;
+  background-size: auto auto;
+  background-size: contain; }
+
+@supports (display: grid) {
+  #noSupportAlert {
+    display: none; } }
+#cookie-law {
+  margin: 0 !important; }
+
+.nav-tabs {
+  margin-bottom: 1rem; }
+
+/*# sourceMappingURL=bootstrap10.css.map */
