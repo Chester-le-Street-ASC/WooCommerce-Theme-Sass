@@ -1,0 +1,42 @@
+.collapse.show {
+  max-height: none;
+}
+
+.hide-a-underline a:hover {
+  text-decoration: none;
+}
+
+.top-bar a {
+  margin: -0.5rem inherit;
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@include media-breakpoint-up(lg) {
+	.navbar:first-child ul {
+	  margin-left: -0.5rem;
+	}
+
+	.navbar:last-child ul {
+	  margin-right: -0.5rem;
+	}
+}
+
+.bg-primary-darker {
+  background: darken($primary, 5%);
+}
+
+.bg-primary-dark {
+  background: darken(darken($primary, 5%), 5%);
+}
+
+/*
+Red BG Search Form
+*/
+.bg-primary::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}

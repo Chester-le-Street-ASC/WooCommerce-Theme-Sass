@@ -10,6 +10,14 @@
   min-width: 100% !important;
   max-width: 100% !important;
 }
+
+.blog-main blockquote {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 1rem;
+  border-left: $primary 5px solid;
+}
+
 .post img, .widget img, .widget select, .wp-caption, img {
     max-width: 100%;
 }
@@ -203,11 +211,14 @@ h3#reply-title {
     padding: 3rem 0;
     text-align: left;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#a40000), to(#bd0000));
-    background-image: -webkit-linear-gradient(top, #a40000 0, #bd0000 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a40000), to(#bd0000));
-    background-image: -o-linear-gradient(top, #a40000 0, #bd0000 100%);
-    background-image: linear-gradient(to bottom, #a40000 0, #bd0000 100%);
+    background: #d10000;
+    /*
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d10000), to(#bd0000));
+    background-image: -webkit-linear-gradient(top, #d10000 0, #bd0000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d10000), to(#bd0000));
+    background-image: -o-linear-gradient(top, #d10000 0, #bd0000 100%);
+    */
+    background-image: linear-gradient(to bottom, #d10000 0, #bd0000 100%);
     background-repeat: repeat-x;
     margin-bottom: 1.5rem;
 	color:#ffffff;
@@ -241,15 +252,14 @@ h3#reply-title {
     max-width: 445px;
     height: 71px;
     display: block;
-    background: url(/wp-content/themes/chester/img/chesterLogo.svg) left center no-repeat;
+    background: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterLogo.svg) left center no-repeat;
     background-size: contain;
 }
 .logowhite {
-    max-width: 445px;
-	height: 71px;
+  max-width: 330px;
 	display: block;
-    background: url(/wp-content/themes/chester/img/chesterLogoAMP.svg) left center no-repeat;
-    background-size: contain;
+  background: url(https://www.chesterlestreetasc.co.uk/wp-content/themes/chester/img/chesterLogoAMP.svg) left center no-repeat;
+  height: 50px;
 }
 .topimage-halloffame {
     background-image: url(/wp-content/themes/chester/img/stylish/imagetophalloffame.jpg);
@@ -302,18 +312,18 @@ a {
     background: #b3d4fc;
 }
 .cell, .flex-panel-default, .well {
-    background-color: #efefef;
+  background-color: #efefef;
 	padding: 1rem;
 }
+
 .cell, .well {
-    min-height: 20px;
-    border: none;
-    border-top: 3px solid #bd0000;
-    border-radius: 0;
-    margin: 0 0 1rem 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+  border: none;
+  margin: 0 0 1rem 0;
 	padding: 1rem;
+}
+
+.cell p:last-child, .well p:last-child {
+  margin-bottom: 0 !important;
 }
 
 .mono {
@@ -338,4 +348,61 @@ a {
 
 .bg-teal {
   background: $teal;
+}
+
+.rsswidget {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.rsswidget ul {
+  list-style: none;
+  margin: 0;
+}
+
+.burnsheader {
+  background:#0288d1;
+  color:#fff;
+  padding:1rem
+}
+
+.serif h1, .serif h2, .serif h3, .serif h4, .serif h5, .serif h6, .serif p, .serif ul, .serif ol, blockquote {
+  font-family: 'Merriweather', Georgia, serif
+}
+
+/*
+Burns Colours
+*/
+
+.bg-burns {
+  background: #0288d1;
+}
+
+.text-burns {
+  color: #0288d1;
+}
+
+.rss-widget-icon {
+  display: none;
+}
+
+.rss-widget-icon:after {
+  content: '<i class="fa fa-rss" aria-hidden="true"></i>';
+}
+
+thead {
+  background: #fff;
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: -ms-sticky !important;
+  position: -o-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 990;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
 }
